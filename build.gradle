@@ -1,0 +1,19 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+}
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.12
+targetCompatibility = 1.12
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile('org.junit.jupiter:junit-jupiter-engine:5.2.0')
+    testCompile('org.assertj:assertj-core:3.8.0')
+}
